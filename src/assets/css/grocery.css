@@ -1,0 +1,12 @@
+.container {
+  width:360px;
+  margin:auto;
+  border: 2px solid gray;
+  } 
+  .done {
+    text-decoration: line-through;
+    opacity: 0,5;
+  }
+  .selected {
+    color:green;
+  }

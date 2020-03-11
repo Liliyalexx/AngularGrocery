@@ -1,0 +1,45 @@
+
+<div>
+  <h2> Grocery list manager </h2>
+    <div class="row">
+      <div class="col-xs-6 col-md-4">
+       
+           
+             <div class="container">
+              <input type="text" class="form-control" placeholder="enter grocery items" id="txtSearch" [(ngModel)]="task" />
+            </div>
+              <div class="input-group-btn">
+                 <ul>
+                  <li> oil </li>
+                  <li> milk</li>
+                  <li> sugar</li>
+                 </ul>
+              </div>
+                  
+      
+                      <div class="input-group">
+                        
+                               <button class="btn btn-primary" type="button" (click)="onClick()">
+                                   <span class="glyphicon glyphicon-ok"></span>
+                               </button>
+      
+                      </div>
+      </div>
+   </div>
+</div>
+<br>
+  <ul class="list-group">
+  <li *ngFor="let task of tasks" class="list-group-item">
+      <span> {{ task.name }} </span>
+   </li>
+  </ul>
+
+   
+
+
+  <script type="text/javascript" src = "assets/js/grocery.js"> </script>
+
+
+
+
+ 

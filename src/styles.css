@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+.container-1 {
+  width:500px;
+  text-align: center;
+  margin-left:200px;
+  border: 2px solid clear;
+  float: left;
+  
+  } 
+  .done {
+    text-decoration: line-through;
+    opacity: 0,5;
+  }
+  .selected {
+    color:green;
+  }
+  .container-2{
+    width:500px;
+    margin:auto;
+    border: 2px solid clear;
+    }
+   .navbar navbar-dark bg-primary{
+     width: 300;
+   }
+   a {
+     size: 10em;
+   }
+   .glyphicon glyphicon-ok {
+    
+   }
+   h2 {
+     
+     margin-top: 70 px;
+     float: center;
+     text-align: center;
+   }
+   nav {
+     margin-top: 30px;
+   }
+   
