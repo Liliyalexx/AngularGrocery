@@ -47,19 +47,16 @@ ol li {
    }
    
    #title {
-    border-width: 80px;
-    border-color: yellow;
-     margin-top: 150 px;
-     float: center;
+    display : inline;
      text-align: center;
      font-family: fantasy;
-     font-weight: bold;
-     text-shadow: #f44336;
-     color: green;
-     text-emphasis-color:green;
-     font-size: 6 em;
-     
-   }
+     font-weight: 700;
+     color:green;
+     font-size: 80px;
+     line-height : 100%;
+     margin-top : 50px;
+     display : block;
+    }
    nav {
      margin-top: 30px;
    }
@@ -89,12 +86,6 @@ ol li {
       background: #eee;
       font-size: 18px;
       transition: 0.2s;
-  }
-  .header {
-    background-color: #f44336;
-    padding: 20px 30px;
-    color: white;
-    text-align: center;
   }
   
   /* Darker background-color on hover */
@@ -138,25 +129,13 @@ ol li:nth-child(odd) {
   background-color: #f44336;
   color: white;
 }
-/* Style the header */
-.header {
-  background-color: #f44336;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
-}
-/* Clear floats after the header */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 /* Style the "Add" button */
 .addBtn {
   padding: 2px;
   width: 100%;
   background: #d9d9d9;
-  color: #555;
+  color:green;
   float: center;
   text-align: center;
   font-size: 10px;
@@ -168,18 +147,7 @@ ol li:nth-child(odd) {
 .addBtn:hover {
   background-color:yellow;
 }
-.nav-link {
-  text-color: white;
-}
 
-  .HelloFresh {
-    width: 130px;
-    height: 50px;
-  }
-  .Amazon {
-    width: 130px;
-    height: 50px;
-  }
 input {
   
   border: 5px;
@@ -190,8 +158,9 @@ input {
   font-size: 100px;
 }
 img {
-  width: 120px;
-  height: 30px;
+  width: 160px;
+  height: 70px;
+  border-radius: 10px;
 }
 .bigAmazon {
   width: 400px;
@@ -201,3 +170,34 @@ img {
   width: 400px;
   height: 350px;
 }
+
+div{
+color: rgb(135, 206, 235);
+}
+.background {
+  height:1000px;
+  margin-top: 0;
+  border: 10px green;
+  border-radius: 10px;
+
+}
+h4{
+  size: 20px;
+}
+#fresh, #amazon {
+  font-size: 20px;
+  font-weight: 800;
+  color: yellow;
+}
+
+.header h4 {
+  font-size: 30px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border-top: 1px solid #ddd;
+  border-radius: 0;
+  color: #fff;
+  }
+
