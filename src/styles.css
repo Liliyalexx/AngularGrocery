@@ -1,12 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 .container-1 {
-  width:500px;
+  width:400px;
   text-align: center;
-  margin-left:200px;
+  margin-left:0px;
   border: 2px solid clear;
   float: left;
   
+  
   } 
+  .container-2{
+    width:400px;
+    margin-top:15px;
+    margin-left: 40px;
+    border: 2px solid clear;
+    font-family: fantasy;
+    }
+    .container-3{
+      width:400px;
+      margin-top:10px;
+      border: 2px solid clear;
+      font-family: fantasy;
+      }
+  /* Style the list items */
+ol li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+  
   .done {
     text-decoration: line-through;
     opacity: 0,5;
@@ -14,27 +38,166 @@
   .selected {
     color:green;
   }
-  .container-2{
-    width:500px;
-    margin:auto;
-    border: 2px solid clear;
-    }
+  
    .navbar navbar-dark bg-primary{
      width: 300;
    }
    a {
-     size: 10em;
+     size: 20em;
    }
-   .glyphicon glyphicon-ok {
-    
-   }
-   h2 {
-     
-     margin-top: 70 px;
+   
+   #title {
+    border-width: 80px;
+    border-color: yellow;
+     margin-top: 150 px;
      float: center;
      text-align: center;
+     font-family: fantasy;
+     font-weight: bold;
+     text-shadow: #f44336;
+     color: green;
+     text-emphasis-color:green;
+     font-size: 6 em;
+     
    }
    nav {
      margin-top: 30px;
    }
    
+   div{
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+
+   }
+   ol lis {
+     background-color: thistle;
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+    
+      cursor: pointer;
+      position: relative;
+      padding: 12px 8px 12px 40px;
+      background: #eee;
+      font-size: 18px;
+      transition: 0.2s;
+  }
+  .header {
+    background-color: #f44336;
+    padding: 20px 30px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Darker background-color on hover */
+ol li:hover {
+  background: #ddd;
+}
+ol li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+/* Add a "checked" mark when clicked on */
+ol li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+.input-group{
+  margin-top: 30px;
+}
+/* Set all odd list items to a different color (zebra-stripes) */
+ol li:nth-child(odd) {
+  background: #f9f9f9;}
+
+  /* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the "Add" button */
+.addBtn {
+  padding: 2px;
+  width: 100%;
+  background: #d9d9d9;
+  color: #555;
+  float: center;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5;
+}
+
+.addBtn:hover {
+  background-color:yellow;
+}
+.nav-link {
+  text-color: white;
+}
+
+  .HelloFresh {
+    width: 130px;
+    height: 50px;
+  }
+  .Amazon {
+    width: 130px;
+    height: 50px;
+  }
+input {
+  
+  border: 5px;
+  border-radius: 20px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 100px;
+}
+img {
+  width: 120px;
+  height: 30px;
+}
+.bigAmazon {
+  width: 400px;
+  height: 350px;
+}
+.bigHelloFresh {
+  width: 400px;
+  height: 350px;
+}

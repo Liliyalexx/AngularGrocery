@@ -1,39 +1,67 @@
 
-  <h2> Grocery list manager </h2>
-  <nav class="navbar navbar-dark bg-primary">
-    
+  <h1 id="title"> Grocery list manager</h1>
+  <nav class = "header" class="navbar navbar-dark bg-success style">
+    <div class="row align-items-start">
     <div class = "container-1">
-     <div class="row">
-      <div class="col-xs-6 col-md-4">
+      
+        <div class="col">
           <div class="input-group">
               <input type="text" class="form-control" placeholder="enter grocery items"  id="txtSearch" [(ngModel)]="task" />
               <div class="input-group-btn">
                   <button class="btn btn-primary" type="button" (click)="onClick()">
-      <span class="glyphicon glyphicon-ok"></span>
+      <span class="glyphicon glyphicon-ok" class="addBtn"> Add</span>
       </button> 
     </div> 
   </div>
 </div>
 </div>
 </div> 
+
       <div class = "container-2">
-      <h4>Make your order from Amazon.fresh </h4>   
-      <button class="btn btn-primary" type="button" (click)="onClick()">
-      <span class="glyphicon glyphicon-ok"> AmazonFresh </span>
-                  
-      <a href = "https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo&ref_=nav_fresh_btn"> </a> 
+        <div class="col">
+      <h4> Make your order from AmazonFresh! </h4>  
+        <button class="btn btn-access" id="Amazonfresh">
+        <a class="nav-link" href="https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo&ref_=nav_fresh_btn"role ="button" aria-pressed="true"><img src="https://techglimpse.com/wp-content/uploads/2014/10/amazonfresh.jpg"> </a> 
     </button>
   </div>
+  
+</div>
+
+
+  <div class = "container-3">
+    <div class="col">
+    <h4> Order products for your favorite recipe! </h4>  
+    <button class="btn btn-access" id="HelloFresh">
+    <a class="nav-link" href="https://www.hellofresh.com/?locale=en-US" role ="button" aria-pressed="true"><img src="https://productimages.nimbledeals.com/gift_card_skin/513e5643cd90378f5234a1da5c743bcb_1522347582871"> </a>  
+  </button>
+</div>
+</div>
   </nav>
   
 <br>
-<ul class="list-group">
-  <li *ngFor="let task of tasks" class="list-group-item">
-      <span> {{ task.name }} </span>
+<div class="row">
+  <div class="col">
+    
+<ol >
+  <li *ngFor="let task of tasks" class="list-group-item" class="page-item">
+   {{task.name }} 
    </li>
-  </ul>
+  </ol>
+</div>
 
 
+
+<div class="col">
+
+  <img class ="bigAmazon" src="https://techcrunch.com/wp-content/uploads/2017/06/amazon-whole-foods-banner.jpg?w=1390&crop=1" alt="">
+</div>
+<div class="col">
+
+  <img class ="bigHelloFresh" src="https://www.gavagai.io/app/uploads/2019/11/hellofresh-768x512.png" alt="">
+</div>
+  
+</div>
+  
 
 
 

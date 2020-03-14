@@ -11,3 +11,4 @@ this.classList.toggle("done");
 
   });
 }
+document.querySelector("h1").style.color = "orange";
